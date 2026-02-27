@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    color: black;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.name {
+    margin-bottom: 5px;
+}
+
+.status {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    background: #4e73df;
+    color: white;
+}
+
+.btn:hover {
+    background: #2e59d9;
+}
+
+.theme-btn {
+    margin-top: 20px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+/* ====== DARK MODE ====== */
+
+body.dark {
+    background: #111;
+    color: white;
+}
+
+body.dark .card {
+    background: #1e1e1e;
+    box-shadow: 0 10px 30px rgba(255,255,255,0.1);
+}
+
+body.dark .status {
+    color: #ccc;
+}
+
+body.dark .btn {
+    background: #333;
+}
+
+body.dark .btn:hover {
+    background: #555;
+}
+
+body.dark .theme-btn {
+    background: white;
+    color: black;
+}
